@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* Custom Properties */
+:root {
+    --primary-color: black;
+    --secondary-color: black;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    --success-color: blue;
+    --error-color: blue;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+/* Elements */
+body {
+    font-family: 'Open Sans';
+    line-height: 1.6;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    scroll-snap-align: start;
+}
+
+img {
+    padding 5px;
+    width: 100px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+/* navbar */
+.navbar {
+    background-color: var(--dark-color);
+    padding: 10px;
+    height: 109px;
+    width: 100vw;
+}
+
+.navbar .logo {
+    display: flex;
+    color: var(--light-color);
+    padding: 10px;
+    margin: 5px 5px;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-ul li a {
+    color: var(--light-color);
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.hamburger {
+    background-color: transparent;
+    display: none;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+/* Showcase */
+.showcase {
+}
+
+/* project */
+.project {
+}
+
+
+/* Skill */
+.skills {
+}
+
+/* languages */
+.languages {
+}
+
+/* Books */
+.books {
+}
+
+/*  Full Screen Scroll */
+.scroll-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.scroll-nav {
+    height: 10%;
+    background-color: var(--primary-color);
+}
+
+.scroll-one {
+    background-color: #002240;
+}
+
+.scroll-two {
+    background-color: #002240;
+}
+
+.scroll-three {
+    background-color: #002240;
+}
+
+.scroll-four {
+    background-color: #002240;
+}
+
+.scroll-five {
+    background-color: #002240;
+}
+
+.scroll-six {
+    background-color: #002240;
+}
+
+.scroll-seven {
+    background-color: #002240;
+}
+
+@media(max-width: 768px) {
+    .grid,
+    .showcase .grid,
+    .stats .grid,
+    .cli .grid,
+    .cloud .grid,
+    .features-main .grid,
+    .docs-main .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    h1 {
+        font-weight: 100;
+        margin: 1px;
+    }
+
+    img {
+        width: 60px;
+        padding: 1px;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .column {
+        font-size: small;
+        margin: 2px;
+        padding: 0px;
+    }
+
+    /* Navbar */
+    .navbar .nav-ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar .nav-ul.show {
+        display: inline-block;
+        background-color: rgba(255,255,255,0.2);
+        align-items: flex-start;
+        position: absolute;
+        padding: 1em;
+        border-radius: 1em;
+        top: 7%;
+        left: 70%;
+        z-index: 1;
+        backdrop-filter: blur(40px);
+        border: solid 2px transparent;
+        background-clip: padding-box;
+        box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 4%;
+        left: 90%;
+    }
+}
