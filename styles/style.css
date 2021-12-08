@@ -45,6 +45,7 @@ ul {
     list-style-type: none;
 }
 
+
 a {
     text-decoration: none;
     color: var(--light-color);
@@ -56,9 +57,28 @@ h1, h2 {
     margin: 10px 0;
 }
 
+.showcase-text {
+    font-size: 30px;
+}
+
+.skills {
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.title {
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 5em;
+}
+
 /* navbar */
 .navbar {
     background-color: var(--dark-color);
+    justify-content: space-between;
     padding: 10px;
     height: 109px;
     width: 100vw;
@@ -135,32 +155,58 @@ h1, h2 {
 }
 
 .scroll-one {
-    background-color: #002240;
+    background-image: url("/../images/background/gradient-1.png");
 }
 
 .scroll-two {
-    background-color: #002240;
+    background-image: url("/../images/background/gradient-2.png");
 }
 
 .scroll-three {
-    background-color: #002240;
+    background-image: url("/../images/background/gradient-3.png");
 }
 
 .scroll-four {
     background-color: #002240;
+    background-image: url("/../images/background/gradient-1.png");
 }
 
 .scroll-five {
     background-color: #002240;
+    background-image: url("/../images/background/gradient-2.png");
 }
 
 .scroll-six {
     background-color: #002240;
+    background-image: url("/../images/background/gradient-3.png");
 }
 
 .scroll-seven {
     background-color: #002240;
 }
+
+/* Shape Divider */
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 201px;
+}
+
+.wave .shape-fill {
+    fill: #FFF;
+}
+
 
 @media(max-width: 768px) {
     .grid,
@@ -185,7 +231,7 @@ h1, h2 {
     }
 
     .row {
-        display: flex;
+        display: grid;
     }
 
     .column {

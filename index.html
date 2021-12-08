@@ -11,8 +11,9 @@
 
 <body>
     <div class="scroll-container">
-        <section class="scroll-nav">
-            <!-- Nav-->
+
+        <!-- Nav-->
+        <section class="scroll-nav" id="nav">
             <div class="navbar flex">
                 <h1 class="logo">Dennis Persaud</h1>
                 <nav>
@@ -21,136 +22,277 @@
                     </button>
                     <ul class="nav-ul">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="skills.html">Skills</a></li>
-                        <li><a href="languages.html">Languages</a></li>
-                        <li><a href="books.html">Books</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#languages">Languages</a></li>
+                        <li><a href="#books">Books</a></li>
+                        <li><a href="#cta">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </section>
-        <section class="scroll-one">
-            <!-- Hero -->
+
+        <!-- Showcase -->
+        <section class="scroll-one" id="showcase">
             <div class="container grid">
                 <div class="showcase-text">
                     <!-- Providing custom technical solutions for modern business problems -->
                     <h1>Let's get started building custom solutions to solve your business problems.</h1>
-                    <a href="contact.html" class="btn btn-outline">Contact Me</a>
+                    <a href="#cta" class="btn btn-outline">Contact Me</a>
                 </div>
             </div>
         </section>
-        <section class="scroll-two">
-            <!-- Projects -->
-            <div class="container row">
-                <div class="column">
-                    <h1>Checkout my projects!</h1>
-                    <ul>
-                        <li><a href="https://github.com/DennisPersaud/inventory-app">
-                            <div class="gcontainer" id="glass">
-                                <h1>Android App</h1>
-                                <img src="images/projects/inventory_app.png" alt="Inventory app">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore iusto recusandae aperiam alias ipsum illum quia earum voluptatum vero id.</p>
-                            </div>
-                        </a></li>
-                        <li><a href="https://github.com/DennisPersaud/financial-data-restful-api">
-                            <div class="gcontainer" id="glass">
-                                <h1>Restful API</h1>
-                                <img src="images/projects/rest_api.png" alt="Rest API">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores corporis eligendi odio eum id reprehenderit, animi iusto saepe ex. Doloremque?</p>
-                            </div>
-                        </a></li>
-                        <li><a href="https://github.com/DennisPersaud/reverse-engineering-project">
-                            <div class="gcontainer" id="glass">
-                                <h1>Reverse Engineering</h1>
-                                <img src="images/projects/reverse_engineering.png" alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus a, dolorum omnis doloribus unde minus possimus assumenda non veritatis aspernatur!</p>
-                            </div>
-                        </a></li>
+
+        <!-- Projects -->
+        <section class="scroll-two" id="projects">
+            <div class="title">
+                <h1>Checkout my projects!</h1>
+                <div class="container row">
+                    <div class="column">
+                        <ul>
+                            <div class="card">
+                                <li><a href="https://github.com/DennisPersaud/inventory-app">
+                                    <div class="flex">
+                                        <div class="card__image">
+                                            <img src="images/projects/inventory_app.png" alt="Inventory app">
+                                        </div>
+                                        <div class="card__title">
+                                            <h1>Android App</h1>
+                                        </div>
+                                    </div>
+                                    <div class="card__description">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore iusto recusandae aperiam alias ipsum illum quia earum voluptatum vero id.</p>
+                                </div>
+                            </a></li>
+                        </div>
+                        <div class="card">
+                            <li><a href="https://github.com/DennisPersaud/financial-data-restful-api">
+                                <div class="flex">
+                                    <div class="card__image">
+                                        <img src="images/projects/rest_api.png" alt="Rest API">
+                                    </div>
+                                    <div class="card__title">
+                                        <h1>Restful API</h1>
+                                    </div>
+                                </div>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores corporis eligendi odio eum id reprehenderit, animi iusto saepe ex. Doloremque?</p>
+                                </div>
+                            </a></li>
+                        </div>
+                        <div class="card">
+                            <li><a href="https://github.com/DennisPersaud/reverse-engineering-project">
+                                <div class="flex">
+                                    <div class="card__image">
+                                        <img src="images/projects/reverse_engineering.png" alt="">
+                                    </div>
+                                    <div class="card__title">
+                                        <h1>Reverse Engineering</h1>
+                                    </div>
+                                </div>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus a, dolorum omnis doloribus unde minus possimus assumenda non veritatis aspernatur!</p>
+                                </div>
+                            </a></li>
+                        </div>
                     </ul>
                 </div>
                 <div class="column">
                     <ul>
-                        <li><a href="https://github.com/DennisPersaud/opengl-project">
-                            <div class="gcontainer" id="glass">
-                                <h1>OpenGL</h1>
-                                <img src="images/projects/opengl.png" alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ea aliquid voluptatibus, maxime id laboriosam aspernatur quam est earum quaerat.</p>
-                            </div>
-                        </a></li>
-                        <li><a href="https://github.com/DennisPersaud/weather-device">
-                            <div class="gcontainer" id="glass">
-                                <h1>Raspberry Pi</h1>
-                                <img src="images/projects/raspberrypi.png" alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima praesentium perspiciatis quaerat odio dolor excepturi optio vero necessitatibus labore ex!</p>
-                            </div>
-                        </a></li>
-                        <li><a href="https://github.com/DennisPersaud/automated-testing-project">
-                            <div class="gcontainer" id="glass">
-                                <h1>Unit Testing</h1>
-                                <img src="images/projects/testing.png" alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae perferendis ipsa quisquam. Veniam distinctio quo, voluptate nam quaerat reprehenderit?</p>
-                            </div>
-                        </a></li>
+                        <div class="card">
+                            <li><a href="https://github.com/DennisPersaud/opengl-project">
+                                <div class="flex">
+                                    <div class="card__image">
+                                        <img src="images/projects/opengl.png" alt="">
+                                    </div>
+                                    <div class="card__title">
+                                        <h1>OpenGL</h1>
+                                    </div>
+                                </div>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ea aliquid voluptatibus, maxime id laboriosam aspernatur quam est earum quaerat.</p>
+                                </div>
+                            </a></li>
+                        </div>
+                        <div class="card">
+                            <li><a href="https://github.com/DennisPersaud/weather-device">
+                                <div class="flex">
+                                    <div class="card__image">
+                                        <img src="images/projects/raspberrypi.png" alt="">
+                                    </div>
+                                    <div class="card__title">
+                                        <h1>Raspberry Pi</h1>
+                                    </div>
+                                </div>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima praesentium perspiciatis quaerat odio dolor excepturi optio vero necessitatibus labore ex!</p>
+                                </div>
+                            </a></li>
+                        </div>
+                        <div class="card">
+                            <li><a href="https://github.com/DennisPersaud/automated-testing-project">
+                                <div class="flex">
+                                    <div class="card_image">
+                                        <img src="images/projects/testing.png" alt="">
+                                    </div>
+                                    <div class="card__title">
+                                        <h1>Unit Testing</h1>
+                                    </div>
+                                </div>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae perferendis ipsa quisquam. Veniam distinctio quo, voluptate nam quaerat reprehenderit?</p>
+                                </div>
+                            </a></li>
+                        </div>
                     </ul>
                 </div>
-            </>
+            </div> 
+        </div>
         </section>
-        <section class="scroll-three">
+
+        <section class="scroll-three" id="skills">
             <!-- Skills -->
-            <div class="container row">
-                <div class="column py-5 m-5">
-                    <ul>
-                        <li>Rapid Prototyping</li>
-                        <li>Test Driven Development</li>
-                        <li>Project Management</li>
-                        <li>Problem Solving</li>
-                        <li>Data Analaysis</li>
-                        <li>Data Mining</li>
-                        <li>System Design</li>
-                        <li>Debugging</li>
-                    </ul>
-                </div>
-                <div class="column py-5 m-5">
-                    <ul>
-                        <li>Technical Communication</li>
-                        <li>Distributed Computing</li>
-                        <li>Full Stack Development</li>
-                        <li>Reverse Engineering</li>
-                        <li>Monitoriing & Logging</li>
-                        <li>Security Hardening</li>
-                        <li>Continuous Integration/Deployment</li>
-                    </ul>
+            <div class="title">
+                <h1>My engineering skills</h1>
+                <div class="container row">
+                    <div class="column py-5 m-5">
+                        <ul>
+                            <div class="skills">
+                                <li>Rapid Prototyping</li>
+                            </div>
+                            <div class="skills">
+                                <li>Test Driven Development</li>
+                            </div>
+                            <div class="skills">
+                                <li>Project Management</li>
+                            </div>
+                            <div class="skills">
+                                <li>Problem Solving</li>
+                            </div>
+                            <div class="skills">
+                                <li>Data Analaysis</li>
+                            </div>
+                            <div class="skills">
+                                <li>Data Mining</li>
+                            </div>
+                            <div class="skills">
+                                <li>System Design</li>
+                            </div>
+                            <div class="skills">
+                                <li>Debugging</li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="column py-5 m-5">
+                        <ul>
+                            <div class="skills">
+                                <li>Technical Communication</li>
+                            </div>
+                            <div class="skills">
+                                <li>Distributed Computing</li>
+                            </div>
+                            <div class="skills">
+                                <li>Full Stack Development</li>
+                            </div>
+                            <div class="skills">
+                                <li>Reverse Engineering</li>
+                            </div>
+                            <div class="skills">
+                                <li>Monitoriing & Logging</li>
+                            </div>
+                            <div class="skills">
+                                <li>Security Hardening</li>
+                            </div>
+                            <div class="skills">
+                                <li>CI/CD</li>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <div class="wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                </svg>
+            </div>
         </section>
-        <section class="scroll-four">
+
+        <section class="scroll-four" id="languages">
             <!-- Languages -->
-            <div class="container">
-                <li>HTML/CSS</li>
-                <li>XML</li>
-                <li>C/C++/C#</li>
-                <li>Java</li>
-                <li>Kotlin</li>
-                <li>Javascript</li>
-                <li>Python</li>
-                <li>Powershell</li>
-                <li>Bash</li>
+            <div class="title">
+                <h1>Programming Languages</h1>
+                <div class="container row">
+                    <div class="column">
+                        <ul>
+                            <img src="images/languages/html.png" alt="">
+                            <img src="images/languages/css.png" alt="">
+                            <img src="images/languages/xml.png" alt="">
+                            <img src="images/languages/php.png" alt="">
+                            <img src="images/languages/javascript.png" alt="">
+                            <img src="images/languages/c.png" alt="">
+                            <img src="images/languages/cpp.png" alt="">
+                            <img src="images/languages/csharp.png" alt="">
+                        </ul>
+                    </div>
+                    
+                    <div class="column">
+                        <ul>
+                            <img src="images/languages/java.png" alt="">
+                            <img src="images/languages/kotlin.png" alt="">
+                            <img src="images/languages/python.png" alt="">
+                            <img src="images/languages/powershell.png" alt="">
+                            <img src="images/languages/bash.png" alt="">
+                            <img src="images/languages/lisp.png" alt="">
+                            <img src="images/languages/assembly.png" alt="">
+                            <img src="images/languages/webassembly.png" alt="">
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="scroll-five">
+
+        <section class="scroll-five" id="books">
             <!-- Favorite Books -->
-            <div class="container">
+            <div class="title">
                 <h1>These are some of my favorite programming books!</h1>
-                <li><a href="Amazon link">Steve Mcconnell</a></li>
-                <li><a href="Amazon link">Sedgwic</a></li>
-                <li><a href="Amazon link">MIT</a></li>
-                <li><a href="Amazon link">Clean Code</a></li>
-                <li><a href="Amazon link">Clean Architecture</a></li>
-                <li><a href="Amazon link">Pragmatic Programming</a></li>
+                <div class="container row">
+                    <div class="column">
+                        <ul>
+                            <img src="images/covers/advanced_data_structures.jpg" alt="">
+                            <img src="images/covers/ai_and_machine_learning_for_coders.jpg" alt="">
+                            <img src="images/covers/algorithm_design.jpg" alt="">
+                            <img src="images/covers/algorithms.png" alt="">
+                            <img src="images/covers/algorithms_in_c.jpg" alt="">
+                            <img src="images/covers/analysis_of_algorithms.jpg" alt="">
+                            <img src="images/covers/assembly_language.jpg" alt="">
+                            <img src="images/covers/clean_architecture.jpg" alt="">
+                            <img src="images/covers/structure_and_interpretation_of_computer_programs.jpg" alt="">
+                            <img src="images/covers/dont_make_me_think.jpg" alt="">
+                        </ul>
+                        <ul>
+                            <img src="images/covers/clean_code.jpg" alt="">
+                            <img src="images/covers/code_complete.jpg" alt="">
+                            <img src="images/covers/compilers.jpg" alt="">
+                            <img src="images/covers/learning_web_design.jpg" alt="">
+                            <img src="images/covers/deep_learning.jpg" alt="">
+                            <img src="images/covers/refactoring_improving _the_design_of_existing_code.jpg" alt="">
+                            <img src="images/covers/technical_communication.jpg" alt="">
+                            <img src="images/covers/design_patterns.webp" alt="">
+                            <img src="images/covers/digital_design_and_computer_architecture.jpg" alt="">
+                            <img src="images/covers/the_pragmatic_programmer.jpg" alt="">
+                            <img src="images/covers/linux_device_drivers.jpg" alt="">
+                            <img src="images/covers/secure_coding_in_cpp.jpg" alt="">
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="column"></div>
+                </div>
             </div>
         </section>
-        <section class="scroll-six">
+        <section class="scroll-six" id="cta">
             <!-- Call To Action -->
             <div class="container">
                 <p>Hire me!</p>
